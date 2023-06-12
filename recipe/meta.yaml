@@ -1,5 +1,5 @@
 {% set name = "aiooss2" %}
-{% set version = "0.2.5" %}
+{% set version = "0.2.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 49db023f2b9c8bd8c9ed5d241c2ff3b42831b468b2cfa1b96ac6700b94fd053d
+  sha256: 06063e10efa6bc82d3d60dbb9cf2cbdc59640737752dc99fcd3bf9726e50be84
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
   noarch: python
 
 requirements:
@@ -33,7 +33,7 @@ test:
 
 about:
   home: https://pypi.org/project/aiooss2/
-  summary: 'Async client for aliyun OSS(Object Storage Service) using oss2 and aiohttp/asyncio'
+  summary: Async client for aliyun OSS(Object Storage Service) using oss2 and aiohttp/asyncio
   license: Apache-2.0
   license_file: LICENSE
 
