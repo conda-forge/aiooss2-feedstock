@@ -1,5 +1,5 @@
 {% set name = "aiooss2" %}
-{% set version = "0.2.10" %}
+{% set version = "0.2.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 65698a287386464e4a08fb862be85668df4d1e1acfe0620404617d88869630eb
+  sha256: 6409e0f7ab66bed364a1c9639b657437175534de160f330d0103a445a2e89a59
 build:
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
